@@ -115,4 +115,4 @@ def get_search_terms(customer_id: str = None) -> str:
     return str(results)
 
 if __name__ == "__main__":
-    mcp.run(transport="sse", host="0.0.0.0", port=8000)
+    mcp.run(transport="streamable-http", host="0.0.0.0", port=8000, path="/mcp")
